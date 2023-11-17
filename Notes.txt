@@ -1,0 +1,17 @@
+ESP32 Matter Fan Notes
+~~~~~~~~~~~~~~~~~~~~~~
+
+Thu Nov 16 08:26:07 PM EST 2023
+    > Flashing an ESP32 in an Ubuntu VM is wonky, need to set:
+        - Serial flash config --->
+          [*] Disable download stub
+        - Slows down flashing, but it works!
+
+    > Pairing code by default is: [2020-2021]
+
+    > Need to setup SSID/Password in 'idf.py menuconfig', attrs are:
+        1. DEFAULT_WIFI_SSID
+        2. DEFAULT_WIFI_PASSWORD
+
+    > Once I had the above things setup, powering up the device was pretty
+      simple!
